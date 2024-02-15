@@ -1,0 +1,5 @@
+{
+  "BAD_REQUEST": { "message": "Не вірні дані!.." },
+  "UNAUTHORIZED": { "message": "Не авторизовано!.." },
+  "SUCCES": { "message": "Успішно" }
+}

@@ -1,0 +1,13 @@
+// ? scss snippets:
+// * display flex
+@mixin flexAlignJustifyCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexAlignJustifySpaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

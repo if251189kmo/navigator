@@ -1,0 +1,15 @@
+// ? screen width
+$-xsmall-width: 320px;
+$small-width: 576px;
+$middle-width: 768px;
+$large-width: 992px;
+$x-large-width: 1200px;
+$xx-large-width: 1920px;
+
+// ? screens
+$x-small: "max-width:" $-xsmall-width; // screen >= 320px !
+$small: "min-width:" $small-width; // screen >= 576px
+$middle: "min-width:" $middle-width; // screen >= 768px !
+$large: "min-width:" $large-width; // screen >= 992px
+$x-large: "min-width:" $x-large-width; // screen >= 1200px
+$xx-large: "min-width:" $xx-large-width; // screen >= 1920px !

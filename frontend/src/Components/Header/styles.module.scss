@@ -1,0 +1,14 @@
+@import './../../styles/colors.module.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $header;
+
+  ul {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+  }
+}

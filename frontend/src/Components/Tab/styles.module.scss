@@ -1,0 +1,24 @@
+@import './../../styles/colors.module.scss';
+
+.tab {
+  background-color: $white;
+  min-width: 40%;
+  padding: 10px;
+  margin: 10px 0;
+
+  .title {
+    background-color: $title;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .text {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .list {
+    background-color: $content;
+  }
+}

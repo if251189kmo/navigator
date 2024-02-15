@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "label": "label",
+      "iconUrl": "iconUrl",
+      "order": 4,
+      "groups": [{ "id": 1, "name": "name", "linksIds": [5] }]
+    },
+    {
+      "id": 1,
+      "label": "label",
+      "iconUrl": "iconUrl",
+      "order": 4,
+      "groups": [{ "id": 1, "name": "name", "linksIds": [5] }]
+    },
+    {
+      "id": 2,
+      "label": "label23232323",
+      "iconUrl": "iconUrl",
+      "order": 4,
+      "groups": [{ "id": 1, "name": "name", "linksIds": [5] }]
+    },
+    {
+      "id": 4,
+      "label": "label",
+      "iconUrl": "iconUrl",
+      "order": 4,
+      "groups": [{ "id": 1, "name": "name", "linksIds": [5] }]
+    }
+  ],
+  "lastUpdatedAt": "lastUpdatedAt",
+  "lastUpdatedBy": "lastUpdatedBy"
+}

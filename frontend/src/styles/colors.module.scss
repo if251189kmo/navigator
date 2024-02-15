@@ -1,0 +1,17 @@
+// ? for scss
+// * MUI colors
+$primary: #39b530;
+$neutral: #000000b3;
+
+$white: rgb(255, 255, 255);
+
+$header: rgb(145, 243, 210);
+$title: rgba(51, 255, 0, 0.408);
+$content: rgba(8, 12, 91, 0.363);
+
+// ? for React js
+:export {
+  primary: $primary;
+  neutral: $neutral;
+  white: $white;
+}

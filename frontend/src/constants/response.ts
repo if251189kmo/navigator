@@ -1,0 +1,10 @@
+enum ResponceCodes {
+  SUCCES = 'SUCCES',
+  BAD_REQUEST = 'BAD_REQUEST',
+  NOT_FOUND = 'NOT_FOUND',
+  INTERNAL_SERVER = 'INTERNAL_SERVER',
+  UNAUTHORIZED = 'UNAUTHORIZED',
+  VALIDATION = 'VALIDATION',
+}
+
+export default ResponceCodes;

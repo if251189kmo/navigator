@@ -1,0 +1,83 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/typescript",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react-refresh",
+    "react",
+    "@typescript-eslint",
+    "import",
+    "jsx-a11y",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    "no-bitwise": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "no-restricted-imports": "off",
+    "@typescript-eslint/no-restricted-imports": [
+      "warn",
+      {
+        "name": "react-redux",
+        "importNames": ["useSelector", "useDispatch"],
+        "message": "Use typed hooks `useAppDispatch` and `useAppSelector` instead."
+      }
+    ],
+    "no-console": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "linebreak-style": "off",
+    "import/prefer-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "arrow-body-style": "off",
+    "react/jsx-no-bind": "off",
+    "no-param-reassign": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/default-param-last": "off",
+    "import/newline-after-import": "error",
+    "import/imports-first": ["error", "absolute-first"],
+    "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "react-refresh/only-export-components": ["warn", { "allowConstantExport": true }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["./src/hooks/useRedux.ts"],
+      "rules": {
+        "@typescript-eslint/no-restricted-imports": "off"
+      }
+    }
+  ]
+}

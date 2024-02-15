@@ -1,0 +1,24 @@
+// const { data, status } = error.response;
+// dispatch(setAlertsMessage({ data, status }));
+// dispatch(setAlertsMessage({ data: 'SUCCES', status: 200 }));
+// dispatch(
+//   setAlertsValid([
+//     { instancePath: 'user', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'role', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'name', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'name', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'name', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'address', message: "Обов'язкове до заповнення" },
+//   ]),
+// );
+// dispatch(
+//   setAlertsValid([
+//     { instancePath: 'user', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'role', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'name', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'name', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'name', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'name', message: "Обов'язкове до заповнення" },
+//     { instancePath: 'phone', message: "Обов'язкове до заповнення" },
+//   ]),
+// );
