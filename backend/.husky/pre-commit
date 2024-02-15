@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd ./navigator-api  && npm run pre-commit
+cd ./backend  && npm run pre-commit
 
 
 
