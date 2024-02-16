@@ -6,9 +6,27 @@
   justify-content: space-between;
   background-color: $header;
 
-  ul {
-    display: flex;
-    width: 40%;
-    justify-content: space-between;
+  h1 {
+    width: 60%;
+    padding: 14px;
+    font-size: 20px;
   }
+
+  .box {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+   
+  
+    .logo {
+      width: auto;
+      height: 40px;
+    }
+  }
+}
+
+ul {
+  background-color: $header;
 }

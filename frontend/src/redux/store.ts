@@ -6,13 +6,14 @@ import { TabsActions } from '../Pages/Tabs/redux/types';
 import { LinksActions } from '../Pages/Links/redux/types';
 import { ProgressActions } from '../Components/Progress/redux/types';
 import { AlertsActions } from '../Components/Alerts/redux/types';
+import { AdminActions } from '../Pages/Administration/redux/types';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const loggerMiddleware = createLogger();
 const setupStore = () => createStore(rootReducer, applyMiddleware(thunk)); // loggerMiddleware
 
 type AppStore = ReturnType<typeof setupStore>;
-type AppActions = TabsActions | LinksActions | ProgressActions | AlertsActions;
+type AppActions = TabsActions | LinksActions | ProgressActions | AlertsActions | AdminActions;
 type AppDispatch = ThunkDispatch<RootState, any, AppActions>;
 type ThinkAsync = ThunkAction<Promise<void>, RootState, unknown, AppActions>;
 

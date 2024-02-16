@@ -1,18 +1,29 @@
-import { useEffect } from 'react';
-import { getTabsA } from './api';
-import { useAppDispatch } from '../../hooks/useRedux';
+// components
+import Tab from '../../Components/Tab';
+
+// logic
+import { useAdministrationLogic } from './hooks/useAdministrationLogic';
+
+// styles
+import styles from './styles.module.scss';
 
 function Administration() {
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(getTabsA());
-  });
+  const { tabs } = useAdministrationLogic();
 
   return (
-    <div>
+    <div className={styles.administration}>
       <h1>Administration</h1>
-      <p>Адміністація</p>
+      <div>
+        <h2>Links</h2>
+      </div>
+      <div>
+        <h2>Tabs</h2>
+        <div className={styles.tabs}>
+          {tabs.map((tab) => (
+            <Tab key={tab.id} {...tab} buttons={[{}]} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

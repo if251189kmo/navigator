@@ -1,10 +1,14 @@
+// logic
 import { useFetchLinks } from './hooks/useFetchLinks';
+
+// styles
+import styles from './styles.module.scss';
 
 function Links() {
   const { links } = useFetchLinks();
 
   return (
-    <div>
+    <div className={styles.links}>
       <h1>Посилання</h1>
       <ul>
         {links.map(({ id, code, label, url }) => {
