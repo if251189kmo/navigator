@@ -2,4 +2,6 @@ enum Roles {
   ADMIN = 'ADMIN',
 }
 
-export default Roles;
+const hasAdminAccess = [Roles.ADMIN];
+
+export { Roles, hasAdminAccess };

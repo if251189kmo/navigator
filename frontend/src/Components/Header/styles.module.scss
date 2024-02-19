@@ -1,14 +1,40 @@
 @import './../../styles/colors.module.scss';
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: $header;
-
-  ul {
+  .title {
     display: flex;
-    width: 40%;
+    align-items: center;
     justify-content: space-between;
+    background-color: $header;
+
+    h1 {
+      width: 60%;
+      padding: 0 14px;
+      font-size: 20px;
+    }
+  
+    .box {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    
+      .logo {
+        width: auto;
+        height: 35px;
+      }
+
+      .authButtons {
+        margin: 0;
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: end;
+    list-style: none;    
+    margin: 2px 0 14px 0 ;
   }
 }
+

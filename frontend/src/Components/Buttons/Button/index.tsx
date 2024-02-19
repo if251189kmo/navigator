@@ -25,7 +25,7 @@ function Button(props: ButtonProps) {
   if (!label && Icon) {
     return (
       <IconButton size={size} {...rest}>
-        <Icon />
+        <Icon fontSize={size} />
       </IconButton>
     );
   }

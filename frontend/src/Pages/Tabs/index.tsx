@@ -8,12 +8,12 @@ import { useFetchTabs } from './hooks/useFetchTabs';
 import styles from './styles.module.scss';
 
 function Tabs() {
-  const { tabs, buttons } = useFetchTabs();
+  const { tabs } = useFetchTabs();
 
   return (
     <div className={styles.tabs}>
       {tabs.map((tab) => (
-        <Tab key={tab.id} {...tab} buttons={buttons(tab.id)} />
+        <Tab key={tab.id} {...tab} />
       ))}
     </div>
   );
