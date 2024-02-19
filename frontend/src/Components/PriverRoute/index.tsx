@@ -6,7 +6,7 @@ import { usePrivateRouteLogic } from './hooks/usePrivateRouteLogic';
 
 // constants
 import { ROUTES } from '../../routes';
-import Roles from '../../constants/roles';
+import { Roles } from '../../constants/roles';
 
 const { HOME } = ROUTES;
 

@@ -11,7 +11,7 @@ import PrivateRoute from './Components/PriverRoute';
 import NotFoundPage from './Components/NoContent/NotFoundPage';
 
 // constants
-import Roles from './constants/roles';
+import { Roles } from './constants/roles';
 import { ROUTES } from './routes';
 
 // logic

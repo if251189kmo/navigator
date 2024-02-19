@@ -1,5 +1,5 @@
 import FullLocalStorage from '../../../constants/localStorage';
-import Roles from '../../../constants/roles';
+import { Roles } from '../../../constants/roles';
 import { decodeToken } from '../../../helpers/decodeToken';
 import { readFromStorage } from '../../../helpers/localStorageOperation';
 

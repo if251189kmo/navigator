@@ -20,7 +20,7 @@ function Administration() {
         <h2>Tabs</h2>
         <div className={styles.tabs}>
           {tabs.map((tab) => (
-            <Tab key={tab.id} {...tab} buttons={[{}]} />
+            <Tab key={tab.id} {...tab} />
           ))}
         </div>
       </div>

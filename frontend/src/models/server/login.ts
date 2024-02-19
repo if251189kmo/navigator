@@ -1,4 +1,4 @@
-import Roles from '../../constants/roles';
+import { Roles } from '../../constants/roles';
 
 type TokenServer = string;
 type AuthUserServer = {

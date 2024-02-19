@@ -13,13 +13,14 @@ import styles from '../styles.module.scss';
 
 export type TitleProps = {
   label: TabUi['label'];
+  access: boolean;
   iconUrl: TabUi['iconUrl'];
 } & {
   buttons: ButtonProps[];
 };
 
 function Title(props: TitleProps) {
-  const { label, iconUrl, buttons } = props;
+  const { label, iconUrl, access, buttons } = props;
 
   return (
     <div className={styles.title}>
@@ -27,7 +28,7 @@ function Title(props: TitleProps) {
         <img src={iconUrl} alt="logo" />
         <Typography variant="h5">{label}</Typography>
       </div>
-      <RenderButtons buttons={buttons} />
+      {access && <RenderButtons buttons={buttons} />}
     </div>
   );
 }
