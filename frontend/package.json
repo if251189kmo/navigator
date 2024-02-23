@@ -13,15 +13,13 @@
     "format": "npm run prettier:fix && npm run lint:fix"
   },
   "dependencies": {
-    "-": "^0.0.1",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
     "@mui/icons-material": "5.14.12",
     "@mui/material": "5.14.12",
     "axios": "1.5.0",
-    "d": "^1.0.1",
     "formik": "2.4.3",
-    "jwt-decode": "^4.0.0",
+    "jwt-decode": "4.0.0",
     "ramda": "0.29.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
