@@ -17,10 +17,11 @@ function Modal() {
       PaperProps={{
         component: 'form',
         onSubmit: (event: React.FormEvent<HTMLFormElement>) => {
-          event.preventDefault();
-          const formData = new FormData(event.currentTarget);
-          const formJson = Object.fromEntries((formData as any).entries());
-          const email = formJson.email;
+          const { preventDefault, currentTarget } = event;
+
+          preventDefault();
+          const { entries } = new FormData(currentTarget);
+          const { email } = Object.fromEntries(entries());
           console.log(email);
           handleClose();
         },

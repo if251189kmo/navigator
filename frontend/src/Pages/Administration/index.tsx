@@ -1,4 +1,5 @@
 // components
+import Modal from '../../Components/Modals';
 import Tab from '../../Components/Tab';
 
 // logic
@@ -12,6 +13,7 @@ function Administration() {
 
   return (
     <div className={styles.administration}>
+      <Modal />
       <h1>Administration</h1>
       <div>
         <h2>Links</h2>

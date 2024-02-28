@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export const useModalLogic = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const handleOpen = () => {
     setOpen(true);
